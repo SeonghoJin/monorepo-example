@@ -1,6 +1,6 @@
 {
   "name": "@moretall/mono-example-a",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "module": "index.js",
   "scripts": {
