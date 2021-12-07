@@ -1,15 +1,19 @@
 {
-  "name": "a",
+  "name": "@moretall/mono-example-a",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "abbrev": "^1.1.1"
   },
-  "type":"module"
+  "type": "module",
+  "peerDependencies": {
+    "@moretall/mono-example-d": "1.0.0"
+  }
 }

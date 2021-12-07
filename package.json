@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:all": "npm run build --workspaces"
+    "start:all": "npm start -w ./packages/",
+    "build:all": "npm build -w ./packages/",
+    "publish:all": "npm publish -w ./packages/ --access=public --force"
   },
   "workspaces": [
     "./packages/*"
   ],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "@pixi/app": "^6.2.0"
-  }
+  "type": "module"
 }
