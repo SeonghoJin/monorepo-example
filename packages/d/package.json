@@ -1,6 +1,6 @@
 {
   "name": "@moretall/mono-example-d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "module": "index.js",
   "scripts": {
@@ -9,5 +9,8 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
 }

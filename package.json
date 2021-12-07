@@ -6,7 +6,8 @@
   "scripts": {
     "start:all": "npm start -w ./packages/",
     "build:all": "npm build -w ./packages/",
-    "publish:all": "npm publish -w ./packages/ --access=public --force"
+    "publish:all": "npm publish -w ./packages/ ",
+    "patch:all": "npm version patch -w ./packages/"
   },
   "workspaces": [
     "./packages/*"
