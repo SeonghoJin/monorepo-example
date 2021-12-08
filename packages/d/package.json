@@ -1,6 +1,6 @@
 {
   "name": "@moretall/mono-example-d",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "module": "index.js",
   "scripts": {
@@ -14,8 +14,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@moretall/mono-example-a": "1.0.2",
-    "@moretall/mono-example-b": "1.0.2",
-    "@moretall/mono-example-c": "1.0.2"
+    "@moretall/mono-example-a": "1.0.5",
+    "@moretall/mono-example-b": "1.0.4",
+    "@moretall/mono-example-c": "1.0.4"
   }
 }
