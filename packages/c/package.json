@@ -16,8 +16,5 @@
   },
   "peerDependencies": {
     "@moretall/mono-example-d": "1.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

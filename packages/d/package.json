@@ -12,5 +12,10 @@
   "type": "module",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@moretall/mono-example-a": "1.0.2",
+    "@moretall/mono-example-b": "1.0.2",
+    "@moretall/mono-example-c": "1.0.2",
   }
 }
