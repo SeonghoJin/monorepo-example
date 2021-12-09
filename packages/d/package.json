@@ -15,7 +15,5 @@
   },
   "dependencies": {
     "@moretall/mono-example-a": "1.0.5",
-    "@moretall/mono-example-b": "1.0.4",
-    "@moretall/mono-example-c": "1.0.4"
   }
 }
