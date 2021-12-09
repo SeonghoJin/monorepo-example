@@ -2,10 +2,10 @@
   "name": "@moretall/mono-example-d",
   "version": "1.0.5",
   "description": "",
-  "module": "index.js",
+  "module": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.ts"
   },
   "author": "",
   "license": "ISC",
