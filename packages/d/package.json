@@ -1,6 +1,6 @@
 {
   "name": "@moretall/mono-example-d",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "module": "dist/es/d.js",
   "main": "dist/umd/d.js",
