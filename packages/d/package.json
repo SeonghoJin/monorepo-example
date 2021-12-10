@@ -1,6 +1,6 @@
 {
   "name": "@moretall/d",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "module": "dist/es/d.js",
   "main": "dist/umd/d.js",
@@ -11,6 +11,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@moretall/mono-example-a": "1.0.10"
+    "@moretall/mono-example-a": "1.0.11"
   }
 }
