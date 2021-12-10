@@ -1,0 +1,1 @@
+import {} from '@moretall/mono-example-a';

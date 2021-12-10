@@ -16,6 +16,13 @@ module.exports = async () => {
 
     const result = [];
 
+    const plugins = [];
+
+    const makeConfig = (entry, isProduction) => ({
+        entry,
+        mode: isProduction ? 'production' : 'development'
+    });
+
     packages.forEach((pkg) => {
         const {
             version,
@@ -30,22 +37,35 @@ module.exports = async () => {
         ].join('\n');
 
         const basePath = path.relative(__dirname, pkg.dir);
-        const mainPath = path.join(basePath, main);
-        const esPath = path.join(basePath, module);
-        let entry = path.join(basePath, 'src/index.js');
-        console.log(pkg);
+        let entry = path.resolve(pkg.dir,'src/index.js');
+
         result.push({
-            entry,
+                ...makeConfig(entry, isProduction),
+                output: {
+                    filename: main,
+                    path: path.resolve(__dirname, basePath),
+                    library: {
+                        name: pkg.name,
+                        type: 'umd',
+                    },
+                },
+            }
+        );
+
+        result.push({
+            ...makeConfig(entry, isProduction),
+            experiments: {
+                outputModule: true,
+            },
             output: {
-                filename: main,
-                path: path.resolve(__dirname, 'dist'),
+                filename: module,
+                path: path.resolve(__dirname, basePath),
                 library: {
-                    name: pkg.name,
-                    type: 'umd',
+                    type: 'module',
                 },
             },
-            mode: isProduction ? 'production' : 'development'
         })
+
     })
 
     return result;
