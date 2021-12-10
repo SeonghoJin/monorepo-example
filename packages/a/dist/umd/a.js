@@ -15,7 +15,7 @@
 		exports["@moretall/mono-example-a"] = factory();
 	else
 		root["@moretall/mono-example-a"] = factory();
-})(self, function() {
+})(globalThis, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({

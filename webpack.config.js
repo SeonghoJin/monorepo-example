@@ -44,6 +44,7 @@ module.exports = async () => {
                 output: {
                     filename: main,
                     path: path.resolve(__dirname, basePath),
+                    globalObject: 'globalThis',
                     library: {
                         name: pkg.name,
                         type: 'umd',
