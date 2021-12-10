@@ -1,2 +1,2 @@
 export const a: number = 123123;
-console.log(a);
+export const b: number = 5;

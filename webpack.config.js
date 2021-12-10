@@ -1,7 +1,7 @@
 const path = require('path');
 const  webpack  = require('webpack');
 const workspacesRun = require("workspaces-run");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const {TsconfigPathsPlugin}= require('tsconfig-paths-webpack-plugin');
 
 module.exports = async () => {
     const isProduction = process.env.NODE_ENV === 'production';
@@ -32,7 +32,8 @@ module.exports = async () => {
             ],
         },
         resolve: {
-            extensions: ['.tsx', '.ts', '.js']
+            plugins: [new TsconfigPathsPlugin()],
+            extensions: ['.tsx', '.ts', '.js'],
         },
     });
 

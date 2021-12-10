@@ -1,7 +1,7 @@
 /*!
  * /*!
  *  * @moretall/mono-example-a - v1.0.9
- *  * Compiled Fri, 10 Dec 2021 08:31:58 GMT
+ *  * Compiled Fri, 10 Dec 2021 10:30:50 GMT
  */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
@@ -31,7 +31,7 @@ return /******/ (() => { // webpackBootstrap
   \*********************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.a = void 0;\nexports.a = 123123;\nconsole.log(exports.a);\n\n\n//# sourceURL=webpack://@moretall/mono-example-a/./packages/a/src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/mono-example-a/./packages/a/src/index.ts?");
 
 /***/ })
 
@@ -40,7 +40,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./packages/a/src/index.ts"](0, __webpack_exports__);
 /******/ 	

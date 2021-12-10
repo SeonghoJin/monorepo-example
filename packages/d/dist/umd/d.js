@@ -1,7 +1,7 @@
 /*!
  * /*!
  *  * @moretall/mono-example-d - v1.0.9
- *  * Compiled Fri, 10 Dec 2021 08:31:58 GMT
+ *  * Compiled Fri, 10 Dec 2021 10:30:50 GMT
  */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
@@ -25,13 +25,23 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./packages/a/src/index.ts":
+/*!*********************************!*\
+  !*** ./packages/a/src/index.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/mono-example-d/./packages/a/src/index.ts?");
+
+/***/ }),
+
 /***/ "./packages/d/src/index.ts":
 /*!*********************************!*\
   !*** ./packages/d/src/index.ts ***!
   \*********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar a_1 = __webpack_require__(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '@moretall/a'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\nconsole.log(a_1.a);\n\n\n//# sourceURL=webpack://@moretall/mono-example-d/./packages/d/src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar a_1 = __webpack_require__(/*! @moretall/a */ \"./packages/a/src/index.ts\");\nconsole.log(a_1.a);\nconsole.log(a_1.b);\n\n\n//# sourceURL=webpack://@moretall/mono-example-d/./packages/d/src/index.ts?");
 
 /***/ })
 
