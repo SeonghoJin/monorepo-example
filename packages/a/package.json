@@ -2,7 +2,9 @@
   "name": "@moretall/mono-example-a",
   "version": "1.0.5",
   "description": "",
-  "module": "src/index.ts",
+  "module": "dist/es/a.js",
+  "main": "dist/umd/a.js",
+  "browser": "dist/umd/a.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.ts"

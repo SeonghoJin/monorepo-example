@@ -2,7 +2,9 @@
   "name": "@moretall/mono-example-d",
   "version": "1.0.5",
   "description": "",
-  "module": "index.ts",
+  "module": "dist/es/d.js",
+  "main": "dist/umd/d.js",
+  "browser": "dist/umd/d.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.ts"
@@ -14,6 +16,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@moretall/mono-example-a": "1.0.5",
+    "@moretall/mono-example-a": "1.0.5"
   }
 }

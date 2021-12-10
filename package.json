@@ -5,19 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start:all": "npm start -w ./packages/",
-    "build:all": "npm build -w ./packages/",
+    "build": "webpack",
     "publish:all": "npm publish -w ./packages/ ",
     "patch:all": "npm version patch -w ./packages/"
   },
   "workspaces": [
-    "./packages/*"
+    "packages/*"
   ],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "typescript": "^4.5.2",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "workspaces-run": "^1.0.1"
   }
 }
