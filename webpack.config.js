@@ -1,5 +1,7 @@
 const path = require('path');
+const  webpack  = require('webpack');
 const workspacesRun = require("workspaces-run");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 module.exports = async () => {
     const isProduction = process.env.NODE_ENV === 'production';
@@ -16,11 +18,10 @@ module.exports = async () => {
 
     const result = [];
 
-    const plugins = [];
-
-    const makeConfig = (entry, isProduction) => ({
+    const makeConfig = (entry, isProduction, plugins) => ({
         entry,
-        mode: isProduction ? 'production' : 'development'
+        mode: isProduction ? 'production' : 'development',
+        plugins
     });
 
     packages.forEach((pkg) => {
@@ -39,8 +40,17 @@ module.exports = async () => {
         const basePath = path.relative(__dirname, pkg.dir);
         let entry = path.resolve(pkg.dir,'src/index.js');
 
+        const plugins = [
+            new webpack.BannerPlugin(
+                {banner}
+            )
+        ]
+
         result.push({
-                ...makeConfig(entry, isProduction),
+                ...makeConfig(entry, isProduction, plugins),
+                plugins : [
+                    ...plugins, new CleanWebpackPlugin()
+                ],
                 output: {
                     filename: main,
                     path: path.resolve(__dirname, basePath),
@@ -54,7 +64,7 @@ module.exports = async () => {
         );
 
         result.push({
-            ...makeConfig(entry, isProduction),
+            ...makeConfig(entry, isProduction, plugins),
             experiments: {
                 outputModule: true,
             },
