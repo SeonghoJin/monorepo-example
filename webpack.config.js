@@ -21,7 +21,19 @@ module.exports = async () => {
     const makeConfig = (entry, isProduction, plugins) => ({
         entry,
         mode: isProduction ? 'production' : 'development',
-        plugins
+        plugins,
+        module: {
+            rules: [
+                {
+                    test: /\.ts?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/,
+                },
+            ],
+        },
+        resolve: {
+            extensions: ['.tsx', '.ts', '.js']
+        },
     });
 
     packages.forEach((pkg) => {
@@ -38,7 +50,7 @@ module.exports = async () => {
         ].join('\n');
 
         const basePath = path.relative(__dirname, pkg.dir);
-        let entry = path.resolve(pkg.dir,'src/index.js');
+        let entry = path.resolve(pkg.dir,'src/index.ts');
 
         const plugins = [
             new webpack.BannerPlugin(
@@ -48,9 +60,6 @@ module.exports = async () => {
 
         result.push({
                 ...makeConfig(entry, isProduction, plugins),
-                plugins : [
-                    ...plugins, new CleanWebpackPlugin()
-                ],
                 output: {
                     filename: main,
                     path: path.resolve(__dirname, basePath),
