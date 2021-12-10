@@ -1,7 +1,7 @@
 /*!
  * /*!
- *  * @moretall/mono-example-d - v1.0.9
- *  * Compiled Fri, 10 Dec 2021 10:30:50 GMT
+ *  * @moretall/d - v1.0.10
+ *  * Compiled Fri, 10 Dec 2021 11:04:43 GMT
  */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").

@@ -1,7 +1,7 @@
 /*!
  * /*!
- *  * @moretall/mono-example-a - v1.0.9
- *  * Compiled Fri, 10 Dec 2021 10:30:50 GMT
+ *  * @moretall/a - v1.0.10
+ *  * Compiled Fri, 10 Dec 2021 11:04:43 GMT
  */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
@@ -17,9 +17,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["@moretall/mono-example-a"] = factory();
+		exports["@moretall/a"] = factory();
 	else
-		root["@moretall/mono-example-a"] = factory();
+		root["@moretall/a"] = factory();
 })(globalThis, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -31,7 +31,7 @@ return /******/ (() => { // webpackBootstrap
   \*********************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/mono-example-a/./packages/a/src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/a/./packages/a/src/index.ts?");
 
 /***/ })
 

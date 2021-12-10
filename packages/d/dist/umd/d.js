@@ -1,7 +1,7 @@
 /*!
  * /*!
- *  * @moretall/mono-example-d - v1.0.9
- *  * Compiled Fri, 10 Dec 2021 10:30:50 GMT
+ *  * @moretall/d - v1.0.10
+ *  * Compiled Fri, 10 Dec 2021 11:04:43 GMT
  */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
@@ -17,9 +17,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["@moretall/mono-example-d"] = factory();
+		exports["@moretall/d"] = factory();
 	else
-		root["@moretall/mono-example-d"] = factory();
+		root["@moretall/d"] = factory();
 })(globalThis, function() {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -31,7 +31,7 @@ return /******/ (() => { // webpackBootstrap
   \*********************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/mono-example-d/./packages/a/src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.b = exports.a = void 0;\nexports.a = 123123;\nexports.b = 5;\n\n\n//# sourceURL=webpack://@moretall/d/./packages/a/src/index.ts?");
 
 /***/ }),
 
@@ -41,7 +41,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \*********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar a_1 = __webpack_require__(/*! @moretall/a */ \"./packages/a/src/index.ts\");\nconsole.log(a_1.a);\nconsole.log(a_1.b);\n\n\n//# sourceURL=webpack://@moretall/mono-example-d/./packages/d/src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar a_1 = __webpack_require__(/*! @moretall/a */ \"./packages/a/src/index.ts\");\nconsole.log(a_1.a);\nconsole.log(a_1.b);\n\n\n//# sourceURL=webpack://@moretall/d/./packages/d/src/index.ts?");
 
 /***/ })
 
